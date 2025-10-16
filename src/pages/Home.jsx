@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import State from '../components/State'
 
 const Home = () => {
   return (
-    <div>
-        {/* <NavLink to="/">HOME</NavLink><br/> */}
-        <NavLink to="/services">SERVICES</NavLink><br />
-        <NavLink to="/about">ABOUT</NavLink><br />
-        <NavLink to="/contact">CONTACT</NavLink>
+    <div className='bg-gray-300 h-[100vh]'>
+        <Navbar/>
+        <State/>
     </div>
   )
 }
